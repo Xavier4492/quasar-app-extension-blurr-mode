@@ -35,9 +35,7 @@ import { useQuasar } from 'quasar'
 export default {
   setup () {
     const $q = useQuasar()
-    return {
-      $q
-    }
+    return {}
   }
 }
 </script>

@@ -36,7 +36,7 @@ module.exports = function (ctx) {
       config: {},
 
       // Quasar plugins
-      plugins: []
+      plugins: ['Meta']
     },
 
     // animations: 'all', // --- includes all animations

@@ -7,10 +7,23 @@
 
 
 # Component BlurrMode
-> Short description of the component
+> This component provide a base steel for a blurr mode in your app.
 
+```sass
+body.body--blurr
+  img
+    filter: blur(12px) !important
+    pointer-events: none !important
+    -webkit-user-select: none !important
+    user-select: none !important
 
+  .q-blurr-content
+    filter: blur(4px) !important
+    pointer-events: none !important
+    -webkit-user-select: none !important
+    user-select: none !important
 
+```
 
 # Usage
 
@@ -29,76 +42,13 @@ import Vue from 'vue'
 import Plugin from 'quasar-ui-blurr-mode'
 import 'quasar-ui-blurr-mode/dist/index.css'
 
-Vue.use(Plugin)
+Vue.use(Plugin, { ssrContext }) // ctx._meta used by SSR
 ```
 
 **OR**:
 
 ```html
 <style src="quasar-ui-blurr-mode/dist/index.css"></style>
-
-<script>
-import { Component as BlurrMode } from 'quasar-ui-blurr-mode'
-
-export default {
-  
-  components: {
-    BlurrMode
-  }
-  
-  
-}
-</script>
-```
-
-## Vue CLI project
-
-```js
-import Vue from 'vue'
-import Plugin from 'quasar-ui-blurr-mode'
-import 'quasar-ui-blurr-mode/dist/index.css'
-
-Vue.use(Plugin)
-```
-
-**OR**:
-
-```html
-<style src="quasar-ui-blurr-mode/dist/index.css"></style>
-
-<script>
-import { Component as BlurrMode } from 'quasar-ui-blurr-mode'
-
-export default {
-  
-  components: {
-    BlurrMode
-  }
-  
-  
-}
-</script>
-```
-
-## UMD variant
-
-Exports `window.blurrMode`.
-
-Add the following tag(s) after the Quasar ones:
-
-```html
-<head>
-  <!-- AFTER the Quasar stylesheet tags: -->
-  <link href="https://cdn.jsdelivr.net/npm/quasar-ui-blurr-mode/dist/index.min.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <!-- at end of body, AFTER Quasar script(s): -->
-  <script src="https://cdn.jsdelivr.net/npm/quasar-ui-blurr-mode/dist/index.umd.min.js"></script>
-</body>
-```
-If you need the RTL variant of the CSS, then go for the following (instead of the above stylesheet link):
-```html
-<link href="https://cdn.jsdelivr.net/npm/quasar-ui-blurr-mode/dist/index.rtl.min.css" rel="stylesheet" type="text/css">
 ```
 
 # Setup

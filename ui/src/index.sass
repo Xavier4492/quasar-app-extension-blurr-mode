@@ -1,5 +1,14 @@
-@import 'quasar/src/css/variables.sass'
+// @import 'quasar/src/css/variables.sass'
 
-@import './components/Component.sass'
+body.body--blurr
+  img
+    filter: blur(12px) !important
+    pointer-events: none !important
+    -webkit-user-select: none !important
+    user-select: none !important
 
-
+  .q-blurr-content
+    filter: blur(4px) !important
+    pointer-events: none !important
+    -webkit-user-select: none !important
+    user-select: none !important

@@ -6,6 +6,12 @@
  */
 
 function extendConf (conf, api) {
+  // we push to /quasar.config file > framework > plugins:
+
+  if (conf.framework?.plugins?.indexOf('Meta') === -1) {
+    conf.framework.plugins.push('Meta')
+  }
+
   // register our boot file
   conf.boot.push('~quasar-app-extension-blurr-mode/src/boot/register.js')
 

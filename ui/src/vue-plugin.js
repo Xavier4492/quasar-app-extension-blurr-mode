@@ -28,7 +28,7 @@ const BlurrInstance = {
 function install(app, options = {}) {
   const { ssrContext } = options
   const $q = app.config.globalProperties.$q
-  const blurrConfig = $q?.config?.blurr !== undefined ? $q.config.blurr : false
+  const blurrConfig = $q.config.blurr !== undefined ? $q.config.blurr : false
 
   if (process.env.SERVER) {
     state.isActive = blurrConfig === true
@@ -63,3 +63,8 @@ export {
   version,
   install
 }
+
+// export default {
+//   version,
+//   install
+// }

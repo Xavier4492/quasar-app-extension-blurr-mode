@@ -22,6 +22,7 @@ function extendConf (conf, api) {
       || conf.build.transpileDependencies // q/app-webpack v3
     )
     transpileTarget.push(/quasar-app-extension-blurr-mode[\\/]src/)
+    transpileTarget.push(/quasar-ui-blurr-mode[\\/]src/)
   }
 
   // make sure the stylesheet goes through webpack to avoid SSR issues
@@ -43,7 +44,7 @@ export default function (api) {
 
 
   // Uncomment the line below if you provide a JSON API for your component
-  // api.registerDescribeApi('BlurrMode', '~quasar-ui-blurr-mode/src/components/BlurrMode.json')
+  // api.registerDescribeApi('$q.blurr', '~quasar-ui-blurr-mode/src/components/BlurrMode.json')
 
 
   // We extend /quasar.conf.js

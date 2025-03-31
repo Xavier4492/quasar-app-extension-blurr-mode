@@ -1,6 +1,6 @@
 {
   "name": "quasar-ui-blurr-mode",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Xavier4492 <xavierloue@gmail.com>",
   "description": "Blurr Mode is a supplemental display mode designed to obscure specific content such as NSFW material or distracting elements by applying a blur effect across targeted UI areas. While maintaining basic readability and structure, this mode helps protect users from potentially sensitive visuals and offers a more controlled browsing experience.",
   "license": "MIT",
